@@ -52,7 +52,7 @@ fn main() {
 
     match kind {
         Kind::Cpu => cpu_bench(0, amount.unwrap_or(8)),
-        Kind::Mem => mem_bench(amount.unwrap_or(60)),
+        Kind::Mem => mem_bench(amount.unwrap_or(30)),
         Kind::CpuAll => {
             let count = num_cpus::get();
             let mut join = None;
